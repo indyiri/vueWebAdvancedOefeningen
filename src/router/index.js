@@ -8,6 +8,9 @@ import HobbyView from '../views/oefening1/HobbyView.vue'
 //OEFENING 4 imports
 import OrderView from '../views/oefening4/OrderView.vue'
 
+// OEFENING 5 import
+import StoreView from '../views/oefening5/StoreView.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -40,6 +43,12 @@ const router = createRouter({
       path: '/order',
       name: 'order',
       component: OrderView,
+    },
+    // OEFENING 5 routes
+    {
+      path: '/store',
+      name: 'store',
+      component: StoreView,
     }
   ],
 })

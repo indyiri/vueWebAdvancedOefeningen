@@ -21,6 +21,9 @@ import HelloWorld from './components/HelloWorld.vue'
 
         <!-- OEFENING 4 -->
         <RouterLink to="/order">Order</RouterLink>
+
+        <!-- OEFENING 5 -->
+        <RouterLink to="/store">Store</RouterLink>
       </nav>
     </div>
   </header>
