@@ -1,9 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
-//OEFENING 1 imports
+//OEFENING 1, 2, 3 imports
 import PersonalView from '../views/oefening1/PersonalView.vue'
 import HobbyView from '../views/oefening1/HobbyView.vue'
+
+//OEFENING 4 imports
+import OrderView from '../views/oefening4/OrderView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,7 +24,7 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
-    // OEFENING 1 routes
+    // OEFENING 1, 2, 3 routes
     {
       path: '/personal',
       name: 'personal',
@@ -32,6 +35,12 @@ const router = createRouter({
       name: 'hobbies',
       component: HobbyView,
     },
+    // OEFENING 4 routes
+    {
+      path: '/order',
+      name: 'order',
+      component: OrderView,
+    }
   ],
 })
 
